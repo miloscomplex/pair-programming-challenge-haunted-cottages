@@ -8,7 +8,8 @@ Rails.application.routes.draw do
 
   get '/cottages/most-disappearances', to: 'cottages#most_disappearances', as: 'most-disappearances'
 
-  get '/cottages/highest-rated', to: 'cottages#highest_rated', as: 'highest-rated'
+  # modified to match nav-bar
+  get '/cottages/highest-rated', to: 'cottages#highest_rated', as: 'highest-ranked'
 
   get '/cottages/:id', to: 'cottages#show'
 

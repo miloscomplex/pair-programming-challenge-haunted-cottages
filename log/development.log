@@ -657,3 +657,78 @@ ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
   
 app/controllers/cottages_controller.rb:22:in `set_cottage'
 app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:20:33 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (4.4ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 101ms (ActiveRecord: 22.3ms | Allocations: 895015)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:20:37 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (5.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 338ms (ActiveRecord: 5.1ms | Allocations: 3107506)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/" for ::1 at 2020-10-17 22:20:41 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 111.0ms | Allocations: 1163556)
+Completed 200 OK in 185ms (Views: 170.9ms | ActiveRecord: 1.2ms | Allocations: 1956307)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:20:44 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.9ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 28ms (ActiveRecord: 0.9ms | Allocations: 250985)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/" for ::1 at 2020-10-17 22:21:58 -0500
+  [1m[35m (5.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.5ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 181.2ms | Allocations: 1606481)
+Completed 200 OK in 269ms (Views: 222.8ms | ActiveRecord: 19.5ms | Allocations: 2406970)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:22:03 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.0ms | Allocations: 142255)
+
+
+Started GET "/" for ::1 at 2020-10-17 22:22:05 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.6ms | Allocations: 7992)
+Completed 200 OK in 68ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 676104)
+
+
