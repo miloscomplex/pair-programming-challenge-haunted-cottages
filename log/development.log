@@ -31,3 +31,517 @@ Migrating to CreateCottages (20201017011530)
   [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
   [1m[36mCottage Create (0.2ms)[0m  [1m[32mINSERT INTO "cottages" ("name", "location", "rating", "description", "number_of_visitor_disappearances", "img_url", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rural Midwestern Farmhouse"], ["location", "Somewhere in the Midwest"], ["rating", 2.9], ["description", "Isolated farmhouse with a location we've kept secret for too long. Go apple picking in nearby orchards, get lost in the farm maze, and whatever you do, don't go into attic. This advice is especially true if you hear weeping."], ["number_of_visitor_disappearances", 1], ["img_url", ""], ["created_at", "2020-10-17 01:16:05.066353"], ["updated_at", "2020-10-17 01:16:05.066353"]]
   [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for ::1 at 2020-10-17 21:46:34 -0500
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 2.1ms | Allocations: 378)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 0.0ms | Allocations: 26558)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:46:45 -0500
+  
+SyntaxError (/Users/michaelsutton/Flatiron/code/05.5 mod_3_pairsProgamming/pair-programming-challenge-haunted-cottages/app/controllers/cottages_controller.rb:11: syntax error, unexpected '-', expecting ';' or '\n'
+  def most-disappearances
+          ^
+/Users/michaelsutton/Flatiron/code/05.5 mod_3_pairsProgamming/pair-programming-challenge-haunted-cottages/app/controllers/cottages_controller.rb:15: syntax error, unexpected '-', expecting ';' or '\n'
+  def highest-rated
+             ^):
+  
+app/controllers/cottages_controller.rb:11: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/cottages_controller.rb:15: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/cottages_controller.rb:11: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/cottages_controller.rb:15: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/cottages_controller.rb:11: syntax error, unexpected '-', expecting ';' or '\n'
+app/controllers/cottages_controller.rb:15: syntax error, unexpected '-', expecting ';' or '\n'
+Started GET "/cottages" for ::1 at 2020-10-17 21:47:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  Rendered cottages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3096)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:48:17 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  Rendered cottages/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2533)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:51:51 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.8ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 7438)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 1.4ms | Allocations: 10405)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:52:20 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 902)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.1ms | Allocations: 3854)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:52:30 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 890)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.1ms | Allocations: 3836)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:52:39 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 717)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 2750)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:55:27 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 105.9ms | Allocations: 60105)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.1ms | Allocations: 61110)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_path' for #<#<Class:0x00007fc328a262a8>:0x00007fc328a249f8>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_path(cottage) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages" for ::1 at 2020-10-17 21:55:47 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 108.6ms | Allocations: 60061)
+Completed 500 Internal Server Error in 111ms (ActiveRecord: 0.2ms | Allocations: 61067)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_paths' for #<#<Class:0x00007fc328b86878>:0x00007fc328b84fc8>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_paths(cottage) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages" for ::1 at 2020-10-17 21:55:48 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 109.6ms | Allocations: 59885)
+Completed 500 Internal Server Error in 110ms (ActiveRecord: 0.1ms | Allocations: 60155)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_paths' for #<#<Class:0x00007fc328b86878>:0x00007fc328bc7170>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_paths(cottage) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages" for ::1 at 2020-10-17 21:56:08 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 105.3ms | Allocations: 60065)
+Completed 500 Internal Server Error in 108ms (ActiveRecord: 0.1ms | Allocations: 61072)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_path' for #<#<Class:0x00007fc3281b74c8>:0x00007fc3281b5c18>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_path(cottage) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages" for ::1 at 2020-10-17 21:56:09 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 108.1ms | Allocations: 59885)
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 0.1ms | Allocations: 60155)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_path' for #<#<Class:0x00007fc3281b74c8>:0x00007fc328b20ff0>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_path(cottage) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages" for ::1 at 2020-10-17 21:56:26 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1159)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 4110)
+
+
+Started GET "/cottages.1" for ::1 at 2020-10-17 21:56:28 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 971)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3156)
+
+
+Started GET "/cottages.1" for ::1 at 2020-10-17 21:56:30 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 975)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3021)
+
+
+Started GET "/cottages.2" for ::1 at 2020-10-17 21:56:31 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 967)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.1ms | Allocations: 3009)
+
+
+Started GET "/cottages.3" for ::1 at 2020-10-17 21:56:32 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 967)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 2997)
+
+
+Started GET "/cottages.4" for ::1 at 2020-10-17 21:56:44 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 967)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.1ms | Allocations: 3008)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:58:17 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1149)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.1ms | Allocations: 4099)
+
+
+Started GET "/cottages.1" for ::1 at 2020-10-17 21:58:19 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 971)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3159)
+
+
+Started GET "/cottages.1" for ::1 at 2020-10-17 21:58:51 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 102.2ms | Allocations: 60196)
+Completed 500 Internal Server Error in 104ms (ActiveRecord: 0.1ms | Allocations: 61243)
+
+
+  
+ActionView::Template::Error (undefined method `cottage_path' for #<#<Class:0x00007fc324295cb8>:0x00007fc32429e908>
+Did you mean?  cottages_path):
+    1: <h1>All of the cottages</h1>
+    2: <div class="">
+    3:   <% @cottages.each do |cottage| %>
+    4:     <h2><%= link_to cottage.name, cottage_path(cottage.id) %></h2>
+    5:     <p><%= cottage.location %></p>
+    6:     <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+    7:   <% end %>
+  
+app/views/cottages/index.html.erb:4
+app/views/cottages/index.html.erb:3
+Started GET "/cottages.1" for ::1 at 2020-10-17 21:59:02 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1143)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 4146)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:59:06 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 971)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3115)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:59:36 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1178)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 4124)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:59:50 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1193)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.1ms | Allocations: 4132)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 21:59:59 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1183)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 4135)
+
+
+Started GET "/cottages.Placid%20Mountain%20Cabin" for ::1 at 2020-10-17 22:00:04 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1005)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 3192)
+
+
+Started GET "/cottages.Peaceful%20Lakeside%20Cottage" for ::1 at 2020-10-17 22:00:07 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1001)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 3033)
+
+
+Started GET "/cottages.Peaceful%20Lakeside%20Cottage" for ::1 at 2020-10-17 22:02:08 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 960)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.1ms | Allocations: 3952)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:02:11 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 5042)
+
+
+Started GET "/cottages.Peaceful%20Lakeside%20Cottage" for ::1 at 2020-10-17 22:02:13 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 784)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2822)
+
+
+Started GET "/cottages/2" for ::1 at 2020-10-17 22:02:14 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2573)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 22:02:35 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 783)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 2921)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-17 22:02:40 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2569)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 22:02:42 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 783)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 2813)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 22:06:39 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 959)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 3903)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:06:41 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 188)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.1ms | Allocations: 2894)
+
+
+Started GET "/cottages/%3C%=%20@cottage.img_url" for ::1 at 2020-10-17 22:06:41 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as 
+  Parameters: {"id"=>"<%= @cottage"}
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 1012)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=<%= @cottage):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:06:43 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2580)
+
+
+Started GET "/cottages/%3C%=%20@cottage.img_url" for ::1 at 2020-10-17 22:06:43 -0500
+Processing by CottagesController#show as 
+  Parameters: {"id"=>"<%= @cottage"}
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms | Allocations: 994)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=<%= @cottage):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:06:50 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 188)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3674)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:07:04 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 190)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.1ms | Allocations: 3673)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-17 22:07:22 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 190)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.1ms | Allocations: 3667)
+
+
+Started GET "/cottages" for ::1 at 2020-10-17 22:07:25 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 959)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms | Allocations: 3132)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-17 22:07:28 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 2593)
+
+

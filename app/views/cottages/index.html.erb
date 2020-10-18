@@ -1,0 +1,8 @@
+<h1>All of the cottages</h1>
+<div class="">
+  <% @cottages.each do |cottage| %>
+    <h2><%= link_to cottage.name, "/cottages/#{cottage.id}" %></h2>
+    <p><%= cottage.location %></p>
+    <img src="<%= cottage.img_url%>" alt="" class="thumbnail">
+  <% end %>
+</div>

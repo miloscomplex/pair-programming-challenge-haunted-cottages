@@ -8,11 +8,11 @@ class CottagesController < ApplicationController
     set_cottage
   end
 
-  def most-disappearances
+  def most_disappearances
 
   end
 
-  def highest-rated
+  def highest_rated
 
   end
 

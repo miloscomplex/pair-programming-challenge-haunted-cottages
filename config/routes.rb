@@ -6,9 +6,9 @@ Rails.application.routes.draw do
 
   get '/cottages/highest-rated'
 
-  get '/cottages/most-disappearances', to: 'cottages#most-disappearances'
+  get '/cottages/most-disappearances', to: 'cottages#most_disappearances', as: 'most-disappearances'
 
-  get '/cottages/highest-rated', to: 'cottages#highest-rated'
+  get '/cottages/highest-rated', to: 'cottages#highest_rated', as: 'highest-rated'
 
   get '/cottages/:id', to: 'cottages#show'
 
