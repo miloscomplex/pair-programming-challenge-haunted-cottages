@@ -9,11 +9,11 @@ class CottagesController < ApplicationController
   end
 
   def most_disappearances
-
+    redirect_to '/'
   end
 
   def highest_rated
-
+    redirect_to '/'
   end
 
   private

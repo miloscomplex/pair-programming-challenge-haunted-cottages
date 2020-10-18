@@ -545,3 +545,115 @@ Processing by CottagesController#show as HTML
 Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.1ms | Allocations: 2593)
 
 
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:10:25 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:12:32 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 2108)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:12:49 -0500
+Processing by CottagesController#most_disappearances as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 853)
+
+
+  
+NoMethodError (undefined method `pry' for #<Binding:0x00007fc3282abed8>
+Did you mean?  try):
+  
+app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:14:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" LIMIT ?[0m  [["LIMIT", 11]]
+  ↳ app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Completed 500 Internal Server Error in 218695ms (ActiveRecord: 0.8ms | Allocations: 90313)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `most_disappearances'
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Started GET "/cottages/" for ::1 at 2020-10-17 22:17:56 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 148.5ms | Allocations: 1392560)
+Completed 200 OK in 233ms (Views: 198.2ms | ActiveRecord: 10.0ms | Allocations: 2184934)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:18:01 -0500
+Processing by CottagesController#most_disappearances as HTML
+Redirected to 
+Completed 500 Internal Server Error in 1345ms (ActiveRecord: 0.0ms | Allocations: 11661703)
+
+
+  
+NoMethodError (undefined method `index_url' for #<CottagesController:0x00007fc328a8ce18>
+Did you mean?  index):
+  
+app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:19:03 -0500
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms | Allocations: 142991)
+
+
+Started GET "/" for ::1 at 2020-10-17 22:19:04 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 4.9ms | Allocations: 22653)
+Completed 200 OK in 81ms (Views: 65.0ms | ActiveRecord: 0.0ms | Allocations: 718455)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-17 22:19:09 -0500
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.0ms | Allocations: 140068)
+
+
+Started GET "/" for ::1 at 2020-10-17 22:19:09 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 7992)
+Completed 200 OK in 67ms (Views: 56.9ms | ActiveRecord: 0.0ms | Allocations: 642763)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-17 22:19:11 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (1.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:22:in `set_cottage'
+Completed 404 Not Found in 92ms (ActiveRecord: 14.6ms | Allocations: 892100)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:22:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
