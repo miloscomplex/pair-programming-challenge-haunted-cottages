@@ -732,3 +732,1388 @@ Processing by ApplicationController#welcome as HTML
 Completed 200 OK in 68ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 676104)
 
 
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mCottage Load (0.5ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "hightest_rated" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "hightest_rated" ASC LIMIT ?[0m  [["LIMIT", 1]]
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/michaelsutton/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/" for ::1 at 2020-10-21 13:48:55 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 4.7ms | Allocations: 332)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 6344)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:49:23 -0500
+  
+AbstractController::ActionNotFound (The action 'most_disappearances' could not be found for CottagesController):
+  
+actionpack (6.0.3.4) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.4) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.4) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.4) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.4) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.4) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+railties (6.0.3.4) lib/rails/engine.rb:527:in `call'
+puma (4.3.6) lib/puma/configuration.rb:228:in `call'
+puma (4.3.6) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.6) lib/puma/server.rb:472:in `process_client'
+puma (4.3.6) lib/puma/server.rb:328:in `block in run'
+puma (4.3.6) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:49:40 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.6ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 94ms (ActiveRecord: 0.3ms | Allocations: 46941)
+
+
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  
+NoMethodError (undefined method `most_disappearance_path' for #<CottagesController:0x00007fe82f97f530>
+Did you mean?  most_disappearances_path
+               most_disappearances
+               most_disappearances_url):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:49:53 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d4b02e0%3E
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 1126)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d4b02e0%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d4fb628%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 185)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d4fb628%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d53a760%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d53a760%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f275e10%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f275e10%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82aaeb888%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82aaeb888%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab0b2c8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab0b2c8%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f954218%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f954218%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f32f1d0%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f32f1d0%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f345ae8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f345ae8%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3679b8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3679b8%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d56c648%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 190)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d56c648%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d57f3b0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d57f3b0%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d597028%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d597028%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f974a40%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f974a40%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f99df30%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f99df30%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9b6378%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9b6378%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9ce8d8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9ce8d8%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9e6e38%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f9e6e38%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab6f318%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab6f318%3E" for ::1 at 2020-10-21 13:49:53 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab87850%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab6f318%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab9f748%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 190)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ab9f748%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82abb7ca8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82abb7ca8%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e2d41f0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e2d41f0%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e9ec5f0%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e9ec5f0%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e2f4748%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e2f4748%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e30cca8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e30cca8%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e3251e0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e3251e0%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e33d718%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e33d718%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82fa05c70%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82fa05c70%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82fa1e1a8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82fa1e1a8%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82abc65c8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82abc65c8%3E" for ::1 at 2020-10-21 13:49:54 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d59eb20%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d59eb20%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f397078%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f397078%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3af5b0%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3af5b0%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5b7af8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5b7af8%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5c40a0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5c40a0%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3bc5d0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3bc5d0%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3d4b08%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3d4b08%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5dd078%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5dd078%3E" for ::1 at 2020-10-21 13:49:55 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5f55b0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d5dd078%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d60d778%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d60d778%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe834811c98%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe834811c98%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3f61b8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f3f61b8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f40e718%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f40e718%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d62ec48%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d62ec48%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e9f71a8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e9f71a8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea0f708%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea0f708%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea27c40%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea27c40%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea341e8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea341e8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f42c740%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f42c740%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d63cb18%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d63cb18%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea5d070%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea5d070%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e365588%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e365588%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e37dae8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e37dae8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e396020%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82e396020%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f43e3c8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f43e3c8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea6e550%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82ea6e550%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d656a90%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82d656a90%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f45e8a8%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+Started GET "/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f45e8a8%3E" for ::1 at 2020-10-21 13:50:00 -0500
+Processing by CottagesController#most_disappearances as 
+Redirected to http://localhost:3000/cottages/most-disappearances.%23%3CCottage::ActiveRecord_Relation:0x00007fe82f476de0%3E
+Completed 302 Found in 0ms (ActiveRecord: 0.0ms | Allocations: 184)
+
+
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/michaelsutton/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/" for ::1 at 2020-10-21 13:51:14 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 4.8ms | Allocations: 476)
+Completed 200 OK in 22ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 6409)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:51:18 -0500
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216942fb8%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1086)
+
+
+Started GET "/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216942fb8%3E" for ::1 at 2020-10-21 13:51:18 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 6893)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.7ms | Allocations: 9561)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:51:21 -0500
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216a459d8%3E
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 190)
+
+
+Started GET "/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216a459d8%3E" for ::1 at 2020-10-21 13:51:21 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 792)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 2829)
+
+
+Started GET "/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216a459d8%3E" for ::1 at 2020-10-21 13:51:28 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 6871)
+Completed 200 OK in 15ms (Views: 12.7ms | ActiveRecord: 0.7ms | Allocations: 9402)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:51:30 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 102ms (ActiveRecord: 0.0ms | Allocations: 40073)
+
+
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  
+NoMethodError (undefined method `cottage_path' for #<CottagesController:0x00007ff216ad5b50>
+Did you mean?  cottages_path):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/michaelsutton/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:52:46 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+Redirected to http://localhost:3000/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216ab1b10%3E
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 1148)
+
+
+Started GET "/cottages.%23%3CCottage::ActiveRecord_Relation:0x00007ff216ab1b10%3E" for ::1 at 2020-10-21 13:52:46 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 6338)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.6ms | Allocations: 8557)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 13:52:49 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:23:in `set_cottage'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.3ms | Allocations: 1352)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:23:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:54:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.3ms | Allocations: 84268)
+
+
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  
+NameError (undefined local variable or method `buybug' for #<CottagesController:0x00007ff216ad4b38>
+Did you mean?  byebug):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:54:18 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:14:in `most_disappearances'
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `most_disappearances'
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `most_disappearances'
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ (byebug):1:in `block in define_url_helper'
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:14:in `most_disappearances'
+  [1m[36mCACHE Cottage Load (0.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:14:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:56:43 -0500
+Completed 500 Internal Server Error in 144525ms (ActiveRecord: 1.4ms | Allocations: 396264)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `block in define_url_helper'
+app/controllers/cottages_controller.rb:14:in `most_disappearances'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:56:49 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (4.9ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Redirected to http://localhost:3000/cottages.5
+Started GET "/cottages/" for ::1 at 2020-10-21 13:56:49 -0500
+Completed 302 Found in 246ms (ActiveRecord: 17.4ms | Allocations: 2157179)
+
+
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (5.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages.5
+Completed 302 Found in 48ms (ActiveRecord: 5.2ms | Allocations: 404097)
+
+
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.4ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 31.3ms | Allocations: 307853)
+Completed 200 OK in 114ms (Views: 95.8ms | ActiveRecord: 1.4ms | Allocations: 1062304)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:56:51 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.9ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages.5
+Completed 302 Found in 39ms (ActiveRecord: 0.9ms | Allocations: 380723)
+
+
+Started GET "/cottages.5" for ::1 at 2020-10-21 13:56:51 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 35.3ms | Allocations: 302570)
+Completed 200 OK in 104ms (Views: 92.3ms | ActiveRecord: 1.2ms | Allocations: 961521)
+
+
+Started GET "/cottages.5" for ::1 at 2020-10-21 13:57:20 -0500
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (4.6ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 188.5ms | Allocations: 1606483)
+Completed 200 OK in 283ms (Views: 236.3ms | ActiveRecord: 19.0ms | Allocations: 2414936)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:58:19 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (1.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages.5
+Completed 302 Found in 43ms (ActiveRecord: 1.3ms | Allocations: 385102)
+
+
+Started GET "/cottages.5" for ::1 at 2020-10-21 13:58:19 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 33.4ms | Allocations: 302570)
+Completed 200 OK in 108ms (Views: 92.5ms | ActiveRecord: 1.1ms | Allocations: 962251)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 13:58:26 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (4.8ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 42ms (ActiveRecord: 4.8ms | Allocations: 329968)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 13:59:18 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (1.6ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 120ms (ActiveRecord: 14.0ms | Allocations: 900764)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 13:59:21 -0500
+  [1m[35m (5.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (1.5ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 32ms (ActiveRecord: 1.5ms | Allocations: 265991)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 13:59:27 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (1.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages.5
+Completed 302 Found in 156ms (ActiveRecord: 1.3ms | Allocations: 1353081)
+
+
+Started GET "/cottages.5" for ::1 at 2020-10-21 13:59:27 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (4.8ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 31.9ms | Allocations: 307853)
+Completed 200 OK in 108ms (Views: 92.4ms | ActiveRecord: 4.8ms | Allocations: 1000874)
+
+
+Started GET "/" for ::1 at 2020-10-21 14:11:25 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.5ms | Allocations: 7992)
+Completed 200 OK in 84ms (Views: 69.0ms | ActiveRecord: 0.0ms | Allocations: 676097)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 14:11:27 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (2.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 44.6ms | Allocations: 307972)
+Completed 200 OK in 130ms (Views: 112.3ms | ActiveRecord: 2.2ms | Allocations: 961767)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-21 14:11:30 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (2.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 10.4ms | Allocations: 60103)
+Completed 200 OK in 138ms (Views: 84.1ms | ActiveRecord: 2.0ms | Allocations: 905537)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 14:11:33 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (1.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 33ms (ActiveRecord: 1.1ms | Allocations: 250985)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 14:11:42 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (5.8ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages.5
+Completed 302 Found in 59ms (ActiveRecord: 5.8ms | Allocations: 382444)
+
+
+Started GET "/cottages.5" for ::1 at 2020-10-21 14:11:43 -0500
+Processing by CottagesController#index as 
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 42.7ms | Allocations: 302571)
+Completed 200 OK in 156ms (Views: 132.1ms | ActiveRecord: 1.1ms | Allocations: 962829)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 14:13:43 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (37.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Completed 500 Internal Server Error in 2293ms (ActiveRecord: 56.7ms | Allocations: 19108492)
+
+
+  
+NoMethodError (undefined method `cottage_path' for #<CottagesController:0x00007ff2145171e8>
+Did you mean?  cottages_path):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Started GET "/cottages/" for ::1 at 2020-10-21 14:13:52 -0500
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (2.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 41.7ms | Allocations: 333688)
+Completed 200 OK in 231ms (Views: 212.9ms | ActiveRecord: 2.0ms | Allocations: 1744889)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 14:13:53 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (2.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Completed 500 Internal Server Error in 2068ms (ActiveRecord: 2.3ms | Allocations: 17669551)
+
+
+  
+NoMethodError (undefined method `cottage_path' for #<CottagesController:0x00007ff2133d8940>
+Did you mean?  cottages_path):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/michaelsutton/.rvm/gems/ruby-2.6.1/bin/rake:23)
+DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
+ (called from load at /Users/michaelsutton/.rvm/gems/ruby-2.6.1/bin/rake:23)
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 14:17:42 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (2.4ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Completed 500 Internal Server Error in 1848ms (ActiveRecord: 20.3ms | Allocations: 15087918)
+
+
+  
+NoMethodError (undefined method `show_path' for #<CottagesController:0x00007ff213403168>):
+  
+app/controllers/cottages_controller.rb:13:in `most_disappearances'
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 14:17:57 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (1.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 247ms (ActiveRecord: 10.0ms | Allocations: 1779928)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 14:17:59 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (5.6ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 33318)
+Completed 200 OK in 123ms (Views: 79.4ms | ActiveRecord: 5.6ms | Allocations: 958824)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 14:18:01 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (5.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 33312)
+Completed 200 OK in 108ms (Views: 77.3ms | ActiveRecord: 5.1ms | Allocations: 847228)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:27:47 -0500
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.4ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 326)
+Completed 200 OK in 35ms (Views: 17.3ms | ActiveRecord: 1.3ms | Allocations: 14137)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:27:49 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.1ms | Allocations: 2631)
+
+
+Started GET "/" for ::1 at 2020-10-21 21:28:56 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.7ms | Allocations: 100)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2415)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 21:28:58 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1001)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms | Allocations: 3209)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-21 21:29:00 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2632)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:29:09 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 946)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:29:55 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.6ms | Allocations: 2184)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:29:55 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/1" for ::1 at 2020-10-21 21:29:57 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 10ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 8151)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:29:59 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/1" for ::1 at 2020-10-21 21:30:06 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2607)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:30:07 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 2ms (ActiveRecord: 0.3ms | Allocations: 826)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:30:07 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2610)
+
+
+Started GET "/cottages/1" for ::1 at 2020-10-21 21:30:10 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2612)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:30:11 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"highest-ranked"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 929)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Cottage with 'id'=highest-ranked):
+  
+app/controllers/cottages_controller.rb:24:in `set_cottage'
+app/controllers/cottages_controller.rb:8:in `show'
+Started GET "/cottages/1" for ::1 at 2020-10-21 21:30:51 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 2608)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:31:23 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 10ms (ActiveRecord: 0.7ms | Allocations: 7218)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:31:23 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 32)
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.1ms | Allocations: 2900)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:31:25 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 1ms (ActiveRecord: 0.2ms | Allocations: 788)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:31:25 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2611)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:31:27 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:31:27 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.1ms | Allocations: 2614)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:31:29 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 767)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:31:29 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2613)
+
+
+Started GET "/" for ::1 at 2020-10-21 21:31:31 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 2179)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 21:31:35 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 807)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 2859)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:31:44 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:31:44 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.1ms | Allocations: 2611)
+
+
+Started GET "/" for ::1 at 2020-10-21 21:31:50 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 21:31:51 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 784)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.1ms | Allocations: 2842)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:32:06 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.1ms | Allocations: 2610)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 21:32:21 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 783)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 2838)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:32:22 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:32:22 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.1ms | Allocations: 2616)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:32:26 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:32:26 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.1ms | Allocations: 2604)
+
+
+Started GET "/" for ::1 at 2020-10-21 21:32:30 -0500
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2025)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:32:39 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:32:39 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 26)
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.1ms | Allocations: 2619)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:32:40 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 765)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:32:40 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 25)
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2608)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:33:07 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (0.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:25:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 31)
+Completed 200 OK in 13ms (Views: 3.1ms | ActiveRecord: 0.6ms | Allocations: 9325)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:33:08 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (0.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:35:43 -0500
+Completed 500 Internal Server Error in 154781ms (ActiveRecord: 0.2ms | Allocations: 144351)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:35:43 -0500
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `highest_rated'
+app/controllers/cottages_controller.rb:19:in `highest_rated'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (1.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (1.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 29ms (ActiveRecord: 1.0ms | Allocations: 223876)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:35:59 -0500
+Completed 500 Internal Server Error in 15285ms (ActiveRecord: 1.2ms | Allocations: 6729661)
+
+
+Started GET "/" for ::1 at 2020-10-21 21:35:59 -0500
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `highest_rated'
+app/controllers/cottages_controller.rb:19:in `highest_rated'
+Started GET "/" for ::1 at 2020-10-21 21:36:00 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (1.2ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/cottages_controller.rb:25:in `set_cottage'
+Processing by ApplicationController#welcome as HTML
+Processing by ApplicationController#welcome as HTML
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.4ms | Allocations: 6424)
+  Rendering cottages/show.html.erb within layouts/application
+  Rendering application/welcome.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 1.8ms | Allocations: 26776)
+  Rendered application/welcome.html.erb within layouts/application (Duration: 0.5ms | Allocations: 6424)
+Completed 200 OK in 1490ms (Views: 1480.3ms | ActiveRecord: 0.0ms | Allocations: 14095951)
+
+
+Started GET "/cottages" for ::1 at 2020-10-21 21:36:05 -0500
+Processing by CottagesController#index as HTML
+  Rendering cottages/index.html.erb within layouts/application
+  [1m[36mCottage Load (1.1ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages"[0m
+  ↳ app/views/cottages/index.html.erb:3
+  Rendered cottages/index.html.erb within layouts/application (Duration: 25.0ms | Allocations: 247549)
+Completed 200 OK in 2652ms (Views: 2632.1ms | ActiveRecord: 0.0ms | Allocations: 25365557)
+
+
+Completed 200 OK in 4634ms (Views: 3199.8ms | ActiveRecord: 1.2ms | Allocations: 42738240)
+
+
+Completed 200 OK in 489ms (Views: 475.7ms | ActiveRecord: 1.1ms | Allocations: 4854791)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:36:13 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (3.9ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 4.6ms | Allocations: 33318)
+Completed 200 OK in 245ms (Views: 64.0ms | ActiveRecord: 13.7ms | Allocations: 2373386)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:36:20 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (4.9ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 40ms (ActiveRecord: 4.9ms | Allocations: 369548)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:36:20 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (1.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 33313)
+Completed 200 OK in 98ms (Views: 68.1ms | ActiveRecord: 1.0ms | Allocations: 848225)
+
+
+Started GET "/cottages/most-disappearances" for ::1 at 2020-10-21 21:36:22 -0500
+Processing by CottagesController#most_disappearances as HTML
+  [1m[36mCottage Load (1.4ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."number_of_visitor_disappearances" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:12:in `most_disappearances'
+Redirected to http://localhost:3000/cottages/5
+Completed 302 Found in 43ms (ActiveRecord: 1.4ms | Allocations: 368644)
+
+
+Started GET "/cottages/5" for ::1 at 2020-10-21 21:36:22 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCottage Load (1.3ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 33312)
+Completed 200 OK in 98ms (Views: 63.8ms | ActiveRecord: 1.3ms | Allocations: 848219)
+
+
+Started GET "/cottages/highest-ranked" for ::1 at 2020-10-21 21:36:24 -0500
+Processing by CottagesController#highest_rated as HTML
+  [1m[36mCottage Load (1.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" ORDER BY "cottages"."rating" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:17:in `highest_rated'
+Redirected to http://localhost:3000/cottages/3
+Completed 302 Found in 40ms (ActiveRecord: 1.0ms | Allocations: 364267)
+
+
+Started GET "/cottages/3" for ::1 at 2020-10-21 21:36:24 -0500
+Processing by CottagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCottage Load (1.0ms)[0m  [1m[34mSELECT "cottages".* FROM "cottages" WHERE "cottages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cottages_controller.rb:24:in `set_cottage'
+  Rendering cottages/show.html.erb within layouts/application
+  Rendered cottages/show.html.erb within layouts/application (Duration: 2.2ms | Allocations: 33313)
+Completed 200 OK in 104ms (Views: 69.4ms | ActiveRecord: 1.0ms | Allocations: 848224)
+
+

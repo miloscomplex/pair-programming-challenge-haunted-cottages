@@ -9,11 +9,13 @@ class CottagesController < ApplicationController
   end
 
   def most_disappearances
-    redirect_to '/'
+    @cottage = Cottage.order(:number_of_visitor_disappearances).first
+    redirect_to  show_path(@cottage.id)
   end
 
   def highest_rated
-    redirect_to '/'
+    @cottage = Cottage.order(:rating).first
+    redirect_to show_path(@cottage)
   end
 
   private
