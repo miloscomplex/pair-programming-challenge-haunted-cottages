@@ -11,9 +11,7 @@ Rails.application.routes.draw do
   # modified to match nav-bar
   get '/cottages/highest-ranked', to: 'cottages#highest_rated', as: 'highest-ranked'
 
+  # needs an alias since I defined one above 
   get '/cottages/:id', to: 'cottages#show', as: 'show'
 
-
-
-  # add your routes here!
 end
